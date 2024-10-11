@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West Engineering</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="./Lannding.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="logo"><a href="#"><img src="./Grupo-5.svg" width="150px"></a></div>
+        <ul class="nav-links">
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#Servicios">Servicios</a></li>
+            <li><a href="#3">Contactenos</a></li>
+            <li><a href="#">Intranet</a></li>
+        </ul>
+    </nav>
+
+    <section class="servicio">
+
+        <div class="servicio-content">
+            <h1>Control Avanzado de Procesos</h1>
+            <p>En la vanguardia de la ingeniería de automatización y control, el Control Avanzado de Procesos emerge como una solución sofisticada que transforma la gestión operativa.
+                Este enfoque automatizado, respaldado por algoritmos avanzados y modelos matemáticos, redefine la optimización en tiempo real de los procesos industriales. Con un enfoque multifacético, busca elevar el rendimiento general de las instalaciones, maximizando la eficiencia operativa, la calidad del producto y la seguridad.
+                Su implementación implica un proceso estructurado de modelado del sistema, formulación de estrategias específicas de Control Avanzado de Procesos (APC) y una ejecución eficiente en campo. Superando las limitaciones de los métodos convencionales, el Control Avanzado se erige como un pilar de adaptabilidad, reduciendo la variabilidad y respondiendo de manera efectiva a perturbaciones.
+                Las soluciones de West Engineering cuentan como premisa de valor el emplear estrategias regulatorias, adaptativas, colaborativas y predictivas mediante la arquitectura de control ya instalada por el cliente, por lo que la incorporación de servidores y aplicaciones de software adicionales no es necesaria en nuestras soluciones.
+                </p>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="service-image">
+                        <img src="images/grafica_control_avanzado_de_procesos.jpg" class="cuote">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="service-image">
+                        <img src="images\soluciones_apc.jpg" class="cuote">
+                        
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="service-image">
+                        <img src="images\graficos_con_tendencias.jpg" class="cuote">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">ChatBot</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        Worldwide Engineering Solutions Team WEST SAS
+                        <li>Bogotá: +57 (1) 300 3989 Carrera 7 N° 127 - 48, Oficina 405 </li>
+                        <li>Houston: +1 (832) 460 1042 443 North loop W. 77008</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container',{
+            effect:'coverflow',
+            grabCursor:true,
+            centeredSlides:true,
+            slidesPerView:'auto',
+            coverflowEffect:{
+                rotate:60,
+                stretch:200,
+                depth:1000,
+                modifier:1,
+                slideShadows:true,
+                slideOpacity:10
+            },
+            pagination:{
+                el:'.swiper-pagination',
+            },
+            initialSlide: 1,
+        });
+    </script>
+    <script src="./Lannding.js"></script>
+
+</body>
+
+</html>

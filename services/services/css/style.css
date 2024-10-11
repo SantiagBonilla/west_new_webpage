@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    font-family: system-ui, sans-serif;
+}
+
+h2,
+h3,
+p {
+    text-align: center;
+}
+
+
+.fila div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 772px) {
+    .fila {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+        /* Espacio entre las filas, ajusta según sea necesario */
+    }
+
+    .fila div {
+        width: 22%;
+        /* 25% del ancho del contenedor menos el espacio entre divs */
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: center;
+    }
+    .fila div img{
+        width: 40%;
+        height: auto;
+    }
+}

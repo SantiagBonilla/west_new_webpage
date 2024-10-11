@@ -1,0 +1,387 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West Engineering</title>
+    <script src="chatbot.js" defer></script>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./Lannding.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+<button class="chatbot-toggler">
+      <span class="material-symbols-rounded">mode_comment</span>
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <!-- sección chatbot -->
+<div class="chatbot">
+      <header>
+        <h2>WESTbot</h2>
+        <span class="close-btn material-symbols-outlined">close</span>
+      </header>
+      <ul class="chatbox">
+        <li class="chat incoming">
+            <span><img src="https://west.net.co/wp-content/uploads/2024/01/westbot.jpeg"></span>
+            <p>Hola! soy WESTbot, tu chat personal <br>¿Cómo puedo ayudarte hoy? ¿Quieres conocer sobre algún tema en particular? 
+                <br>servicios<br>contacto<br>preguntas frecuentes<br><br>si en algún momento necesitas volver al menu principal puedes escribir "menu"
+                <br><i>recuerda que debes escribir la opción, basta con que escribas la palabra clave o parte de la palabra </i></p>
+        </li>
+      </ul>
+      <div class="chat-input">
+        <textarea placeholder="Introduzca la opción" spellcheck="false" required></textarea>
+        <span id="send-btn" class="material-symbols-rounded">send</span>
+      </div>
+    </div>
+
+    
+
+    <!-- menú lateral -->
+    <div id="cont">
+      <div class="menu-fixed" id="menu-fixed">
+          <a href="#cont">
+            <i class="material-icons back">
+              <span class="material-symbols-outlined">
+                arrow_back_ios
+                </span>
+            </i>
+          </a>
+          <a href="#menu-fixed">
+            <div class="logo">
+              <span></span>   
+            </div>
+            <p class="pmenu">MENU</p>
+          </a>
+          <hr>
+          <ul class="menu">
+<a href="/test">            
+<li>
+              <span class="material-symbols-outlined" style="color: white;">home</span>
+            <p>Home</p>
+            </li>
+</a>
+<a href="/nosotrostest">
+            <li>
+           <span class="material-symbols-outlined" style="color: white;">groups</span>
+              <p>Nosotros</p>
+            </li>
+</a>
+<a href="/test#Servicios">
+            <li>
+              <span class="material-symbols-outlined" style="color: white;">design_services</span>
+              <p>Servicios</p>
+            </li>
+</a>
+<a href="/contactotest">
+            <li>
+              <span class="material-symbols-outlined" style="color: white;">contact_phone</span>
+              <p>Contacténos</p>
+            </li>
+</a>
+<a href="/gestion-hseq">
+            <li>
+              <span class="material-symbols-outlined" style="color: white;">file_present</span>
+              <p>Gestión HSEQ</p>
+            </li>
+</a>
+<a href="/gestion-administrativa">
+            <li>
+              <span class="material-symbols-outlined" style="color: white;">pending_actions</span>
+              <p>Gestión Administrativa</p>
+            </li>
+</a>
+<a href="/intranet">
+            <li>
+              <span class="material-symbols-outlined" style="color: white;">help_center</span>
+              <p>Mesa de ayuda</p>
+            </li>
+</a>
+<a href="/intranet-2">
+            <li>
+              <span class="material-symbols-outlined" style="color: white;">history_edu</span>
+              <p>Autogestión</p>
+            </li>
+</a>
+          </ul>
+          <ul>
+            <li><div class="flags" id="flags">
+              <div class="flags__item" data-language="es">
+                <img src="https://west.net.co/wp-content/uploads/2024/01/colombia.svg" alt="">
+              </div>
+              <div class="flags__item" data-language="en">
+                <img src="https://west.net.co/wp-content/uploads/2024/01/unitedStates.svg" alt="">
+              </div>
+            </div></li>
+          </ul>
+          <ul>
+            <li class="material-icons info">
+            <a href="../wp-login.php?action=logout"><span class="material-symbols-outlined" style="color: white; cursor: pointer;">logout</span></a> 
+          </li>
+          </ul>
+          
+      </div>
+    </div>
+    
+    <!-- top menú -->
+    <nav id="navbar" class="navbar">
+      <div class="logo"><a href="/testpage"><img src="https://west.net.co/wp-content/uploads/2020/11/Grupo-5.svg" width="150px" /></a></div>
+      <ul class="nav-links">
+         <li><a href="/nosotrostest">Nosotros</a></li>
+         <li><a href="/test#Servicios">Servicios</a></li>
+         <li id="Contacto"><a href="/contactotest">Contactenos</a></li>
+         <li id="Intranet"><a>Intranet
+        </a></li>
+        <li><a><div class="flags" id="flags">
+          <div class="flags__item" data-language="es">
+            <img src="https://west.net.co/wp-content/uploads/2024/01/colombia.svg" alt="">
+          </div>
+          <div class="flags__item" data-language="en">
+            <img src="https://west.net.co/wp-content/uploads/2024/01/unitedStates.svg" alt="">
+          </div>
+        </div></a></li>
+        
+      </ul>
+    </nav>
+    <section>
+      <nav class="single-page-intro apc-single-background" id="1">
+          <div class="content">
+              <h1>CIBERSEGURIDAD INDUSTRIAL</h1>
+              <p> WEST es una empresa especializada en ciberseguridad industrial. Ofrece evaluaciones de madurez en ocho áreas clave, diseñando programas personalizados
+                basados en estándares internacionales como IEC-62443 y NERC-CIP. Además, proporciona asesoramiento en la implementación de controles de seguridad y
+                promueve cambios en la cultura organizacional para fortalecer la ciberseguridad. La empresa se destaca por su enfoque integral y adaptado a las 
+                necesidades específicas de cada cliente.
+              </p>
+          </div>
+      </nav>
+  </section>
+
+    <section>
+        <div class="contenedor">
+            <div class="texto-maquina">
+                <div class="fila-maquina">
+                    <div>
+                        <p>
+                            Frente al crecimiento de la conectividad en entornos industriales y la proliferación de servicios de hacking, se advierte sobre la inevitable 
+                            posibilidad de ciberataques a infraestructuras industriales.
+                            Ante la preocupación global por los crecientes ataques, se destaca la importancia de tomar medidas inmediatas para asegurar y proteger los 
+                            sistemas de control industrial (ICS/TO).
+                            Este aseguramiento debe basarse en la comprensión de los riesgos específicos de cada industria y sus procesos, considerando las diversas amenazas
+                            y escenarios. No solo se trata de hardware, sino también de la
+                            cultura organizacional, por lo que se enfatiza la evaluación de políticas y procedimientos para una gestión efectiva de la ciberseguridad 
+                            industrial.
+                            </p>
+                    </div>
+                    <div>
+                        <p>
+                            En WEST ofrecemos evaluaciones y programas de ciberseguridad industrial, siguiendo estándares internacionales como IEC-62443 y NERC-CIP, con el 
+                        objetivo de mitigar riesgos y mejorar la postura de seguridad.
+                        El primer paso es llevar a cabo un análisis de madures del proceso de ciberseguridad industrial con base en 8 áreas de proceso dividida en 4 niveles 
+                        de madurez que le permitirán saber en qué nivel se encuentra su
+                        organización.
+                        Esta actividad la realizamos usando herramientas diseñadas por el Centro de Ciberseguridad Industrial
+                        (CCI)de España.
+                        Los resultados del análisis de madurez serán un input para el programa de ciberseguridad industrial que le ayudaremos a implementar, enmarcados en 
+                        estándares  como IEC-62443, NERC-CIP u otro que se ajuste a su organización. WEST le guiara en cada una de las fases que se requiere para la implementación.
+                        </p>
+                    </div>
+                    
+                    
+                </fila>
+          </div>
+                
+    </section>
+
+    
+    <!--seccion politicas  -->
+    
+    <section class="seccion politicas" style="padding: 2vh 15vw;">
+        <div class="politicas-heading">
+            <h2>BUENAS PRACTICAS DE CIBERSEGURIDAD </h2>
+        </div>
+        <div class="politicas-container">
+            <div class="politicas-content" style="padding-top: 20px;" >
+                <p style="margin: 0; text-align: justify;">Si creen que aún no están listos para la implementación de un estándar ya sea por la inversión en tiempo y/o recursos que esto implica, pero requieren hacer un 
+                    aseguramiento inicial que les permita acercarse a ese objetivo. La implementación de estos 5 controles fundacionales de seguridad, que son la base de todo buen programa
+                    ciberseguridad industrial, le ayudaran a realizar ese aseguramiento inicial, reducir el riesgo de ciberseguridad y facilitar la implementación de alguno de los 
+                    estándares de ciberseguridad industrial.<br>
+                    En WEST le ayudamos con la implementación de estos 5 controles, y a hacer una evaluación de brechas de seguridad sobre su arquitectura de control instalada y determinar
+                    puntos donde debe ser fortalecida y brechas que deban ser solucionadas, con lo que podrá tener una reducción del riesgo de ciberseguridad aproximadamente en un 85%.
+                </p>
+            </div>
+            <div class="politicas-imgs">
+                <div class="item">
+                        <img src="images/BP.jpg" style="width: 800px; border-radius: 20px;">
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="Servicios">
+            <h2 data-section="services" data-value="heading">SOLUCIONES TECNOLÓGICAS</h2>
+            <div class = "fila" >
+                <div class = "card-home">
+                  <img src="https://west.net.co/wp-content/uploads/2024/01/CIBERSEGURIDAD4.png" alt="">
+                  <div class="card-content">
+                    <h2 data-section="services" data-value="heading-control">Gestión de Ciberactivos</h2>
+                    <p data-section="services" data-value="content-control">
+                        Siempre se debe tener visibilidad sobre los ciberactivos. Sin saber qué está conectado a la red, la seguridad se vuelve
+                        difícil. Se pueden emplear varios métodos de recopilación de datos, como el ingreso manual, monitoreo pasivo, consultas en bases de datos, consultas sin agente con
+                        protocolos nativos y el uso de agentes. Estos permiten obtener fácilmente una visión completa de todos los dispositivos conectados a la red de control, asegurando
+                        así un inventario actualizado de hardware y software.
+                        
+                    </p>     
+                  </div>
+                </div>
+                <div class = "card-home">
+                    <img src="https://west.net.co/wp-content/uploads/2024/01/CIBERSEGURIDAD5.png" alt="">
+                  <div class="card-content">
+                    <h2 data-section="services" data-value="heading-analytics">Gestión de vulnerabilidades</h2>
+                    <p data-section="services" data-value="content-analytics">
+                        El enfoque tradicional de gestión de vulnerabilidades de TI no es compatible con los ICS, en WEST entendemos la criticidad de estas diferencias y nuestra solución 
+                        ofrece métodos seguros para identificar y priorizar las vulnerabilidades de manera que puedan enfocar sus  esfuerzos de remediación. 
+                    </p>                   
+                  </div>
+                  </div>
+                <div class = "card-home">
+                  <img src="https://west.net.co/wp-content/uploads/2024/01/Ciberactivos.png" alt="">
+                  <div class="card-content">
+                    <h2 data-section="services" data-value="heading-automation">Gestión de cambio y configuración</h2>
+                    <p data-section="services" data-value="content-automation">
+                        Al tener una base de datos de actualizada de todos los ciberactivos conectados a la red del ICS y además una gran cantidad de información de estos
+                        información como fabricante, modelo, versión del firmware, puertos usados, usuarios, servicios activos, configuración, etc. Se pueden crear líneas 
+                        base y detectar cambios no deseados en los ciberactivos ya que son monitoreados en tiempo real. 
+                    </p>                   
+                  </div>
+                </div>
+            </div>
+            <div class = "fila">
+              <div class = "card-home">
+                <img src="https://west.net.co/wp-content/uploads/2024/01/gestiondevulnera.png" alt="">
+                <div class="card-content">
+                  <h2 data-section="services" data-value="heading-safety">Gestión de Amenazas</h2>
+                  <p data-section="services" data-value="content-safety">
+                    Nuestra solución permite implementar sondas IDS en puntos predefinidos de la red, realizando un monitoreo en tiempo real del tráfico para detectar 
+                    posibles amenazas. Además, mediante la creación de líneas base de configuración, se generan alertas ante cambios y se facilita la detección de amenazas. 
+                    La integración sencilla con otras plataformas posibilita compartir información de manera segura con diferentes áreas de la empresa.
+                  </p>                    
+                </div>
+              </div>
+              <div class = "card-home">
+                  <img src="https://west.net.co/wp-content/uploads/2024/01/Gestiondeconfi.png" alt="">
+                <div class="card-content">
+                  <h2 data-section="services" data-value="heading-reality">Recuperación rápida de un ciberataque</h2>
+                  <p data-section="services" data-value="content-reality">
+                    Un buen programa de ciberseguridad industrial no solo debe prevenir y detectar si no también estar preparado para cuando se presente un ciberataque y tener la 
+                    capacidad de recuperar la operación de manera rápida. Nuestra solución mejora la ciber-resiliencia de su ICS y asegura la continuidad operacional.
+                  </p>                   
+                </div>
+                </div>
+              <div class = "card-home">
+                <img src="https://west.net.co/wp-content/uploads/2024/01/CIBERSEGURIDAD6.png" alt="">
+                <div class="card-content">
+                  <h2 data-section="services" data-value="heading-cybersecurity">Segmentación Física</h2>
+                  <p data-section="services" data-value="content-cybersecurity">
+                    En aplicaciones donde se requieren compartir datos hacia fuera de la red de control industrial para fines de monitoreo o análisis de forma segura, sin la preocupación
+                    de generar brechas de seguridad la solución son los Data Diodos, Esta tecnología crea una segmentación física permitiendo la comunicación en un solo sentido desde la 
+                    red de control hacia afuera pero en sentido contrario no es físicamente posible ya no existe los caminos o circuitos que lo permitan.
+                  </p>                   
+                </div>
+              </div>
+              </div>
+        </div>
+
+    </section>
+
+    <span><br></span>
+    <!-- seccion certificaciones de equipo  -->
+    <section class="seccion equipo-integracion" style="height: 50vh;">
+        <h2>CERTIFICACIONES DEL EQUIPO</h2>
+        <div class="fila-integracion">
+            <div class="integracion-content">
+                <img src="https://west.net.co/wp-content/uploads/2024/01/NT1.png">           
+                <div class="integracion-text">
+                    <h3>CYBERSECURITY EXPERT</h3>
+                    <p>CERTIFIED (ISA)</p>
+                </div>
+            </div>
+            <div class="integracion-content">
+                <img src="https://west.net.co/wp-content/uploads/2024/01/NT4.png">        
+                <div class="integracion-text">
+                    <h3>PROFESSIONAL CERTIFIED</h3>
+                    <p>CERTIFIED OLARWINDS</p>
+                </div>
+            </div>
+            <div class="integracion-content">
+                <img src="https://west.net.co/wp-content/uploads/2024/01/NT3.png">             
+                <div class="integracion-text">
+                    <h3>SUD</h3>
+                    <p>CERTIFIED TUV</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila-integracion">
+            <div class="integracion-content">
+                <img src="https://west.net.co/wp-content/uploads/2024/01/NT2.png">         
+                <div class="integracion-text">
+                    <h3>CEH</h3>
+                    <p>CERTIFIED ETHICAL HACKER</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <span><br></span>
+    <div class="slider">
+        <h2 data-section="partners" data-value="heading">NUESTRAS ALIANZAS</h2>
+        <div class="slide-track">
+            <div class="slide"> <img src="https://west.net.co/wp-content/uploads/2024/01/Alianza1.png"> </div>
+            <div class="slide"> <img src="https://west.net.co/wp-content/uploads/2024/01/Alianza2.png"> </div>
+            <div class="slide"> <img src="https://west.net.co/wp-content/uploads/2024/01/Alianza3.png"></div>
+            <div class="slide"> <img src="https://west.net.co/wp-content/uploads/2024/01/Alianza4.png"></div>
+            <div class="slide"> <img src="https://west.net.co/wp-content/uploads/2024/01/Alianza5.png"></div>
+            <div class="slide"> <img src="https://west.net.co/wp-content/uploads/2024/01/Alianza6.png"></div>
+            <div class="slide"> <img src="https://west.net.co/wp-content/uploads/2023/02/Siemens-Logo.png"></div>
+            <div class="slide"> <img src="https://west.net.co/wp-content/uploads/2024/01/Alianza1.png"> </div>
+            <div class="slide"> <img src="https://west.net.co/wp-content/uploads/2024/01/Alianza2.png"> </div>
+            <div class="slide"> <img src="https://west.net.co/wp-content/uploads/2024/01/Alianza3.png"></div>
+            <div class="slide"> <img src="https://west.net.co/wp-content/uploads/2024/01/Alianza4.png"></div>
+            <div class="slide"> <img src="https://west.net.co/wp-content/uploads/2024/01/Alianza5.png"></div>
+            <div class="slide"> <img src="https://west.net.co/wp-content/uploads/2024/01/Alianza6.png"></div>
+            <div class="slide"> <img src="https://west.net.co/wp-content/uploads/2023/02/Siemens-Logo.png"></div>
+
+        </div>
+            
+    </div>
+
+    <!-- sección footer -->
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+              <div class="footer-col">
+                <h4 data-section="footer" data-value="company">company</h4>
+                <ul>
+                  <li><a href="#" data-section="footer" data-value="company1">about us</a></li>
+                  <li><a href="#" data-section="footer" data-value="company2">our services</a></li>
+                  <li><a href="#" data-section="footer" data-value="company3">privacy policy</a></li>
+                  <li><a href="#" data-section="footer" data-value="company4">affiliate program</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4 data-section="footer" data-value="get_help">get help</h4>
+                <ul>
+                  <li><a href="#" data-section="footer" data-value="get_help1">FAQ</a></li>
+                  <li><a href="#" data-section="footer" data-value="get_help2">ChatBot</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                  <h4 data-section="footer" data-value="contact_info">Contact Info</h4>
+                    <ul>
+                    Worldwide Engineering Solutions Team WEST SAS
+                    <li>Bogotá: +57 (1) 300 3989    Carrera 7 N° 127 - 48, Oficina 405 </li>
+                    <li>Houston:  +1 (832) 460 1042 443 North loop W. 77008</li>
+                    </ul> 
+              </div>
+          </div>
+        </div>
+      </footer>

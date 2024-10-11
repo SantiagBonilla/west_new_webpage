@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West Engineering</title>
+    <script src="chatbot.js" defer></script>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./Lannding.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    
+  </head>
+  <body>
+    <!-- menú lateral -->
+    <div id="cont">
+        <div class="menu-fixed" id="menu-fixed">
+            <a href="#cont">
+              <i class="material-icons back">
+                <span class="material-symbols-outlined">
+                  arrow_back_ios
+                  </span>
+              </i>
+            </a>
+            <a href="#menu-fixed">
+              <div class="logo">
+                <span></span>   
+              </div>
+              <p class="pmenu">MENU</p>
+            </a>
+            <hr>
+            <ul class="menu">
+  <a href="/test">            
+  <li>
+                <span class="material-symbols-outlined" style="color: white;">home</span>
+              <p>Home</p>
+              </li>
+  </a>
+  <a href="/nosotrostest">
+              <li>
+             <span class="material-symbols-outlined" style="color: white;">groups</span>
+                <p>Nosotros</p>
+              </li>
+  </a>
+  <a href="/test#Servicios">
+              <li>
+                <span class="material-symbols-outlined" style="color: white;">design_services</span>
+                <p>Servicios</p>
+              </li>
+  </a>
+  <a href="/contactotest">
+              <li>
+                <span class="material-symbols-outlined" style="color: white;">contact_phone</span>
+                <p>Contacténos</p>
+              </li>
+  </a>
+  <a href="/gestion-hseq">
+              <li>
+                <span class="material-symbols-outlined" style="color: white;">file_present</span>
+                <p>Gestión HSEQ</p>
+              </li>
+  </a>
+  <a href="/gestion-administrativa">
+              <li>
+                <span class="material-symbols-outlined" style="color: white;">pending_actions</span>
+                <p>Gestión Administrativa</p>
+              </li>
+  </a>
+  <a href="/intranet">
+              <li>
+                <span class="material-symbols-outlined" style="color: white;">help_center</span>
+                <p>Mesa de ayuda</p>
+              </li>
+  </a>
+  <a href="/intranet-2">
+              <li>
+                <span class="material-symbols-outlined" style="color: white;">history_edu</span>
+                <p>Autogestión</p>
+              </li>
+  </a>
+            </ul>
+            <ul>
+              <li><div class="flags" id="flags">
+                <div class="flags__item" data-language="es">
+                  <img src="https://west.net.co/wp-content/uploads/2024/01/colombia.svg" alt="">
+                </div>
+                <div class="flags__item" data-language="en">
+                  <img src="https://west.net.co/wp-content/uploads/2024/01/unitedStates.svg" alt="">
+                </div>
+              </div></li>
+            </ul>
+            <ul>
+              <li class="material-icons info">
+              <a href="../wp-login.php?action=logout"><span class="material-symbols-outlined" style="color: white; cursor: pointer;">logout</span></a> 
+            </li>
+            </ul>
+            
+        </div>
+      </div>
+      
+      <!-- top menú -->
+      <nav class="navbar" id="navbar">
+          <div class="logo"><a href="#"><img src="./Grupo-5.svg" width="150px"></a></div>
+          <ul class="nav-links">
+              <li><a href="#">Nosotros</a></li>
+              <li>
+                  <a href="Lannding.html#Servicios">Servicios</a>
+                  <ul class="dropdown">
+                    <li><a href="APCBuena.html">APC</a></li>
+                    <li><a href="Sostenibilidad.html">Sostenibilidad</a></li>
+                    <li><a href="AutomatizacionBuena.html">Automatizacion</a></li>
+                    <li><a href="SeguridadFuncionaBuena.html">Seguridad Funcional</a></li>
+                    <li><a href="Digitalización.html">Digitalizacion</a></li>
+                    <li><a href="ciberseguridad.html">Ciberseguridad</a></li>
+                    <li><a href="lufkin.html">Lufkin</a></li>
+                  </ul>
+                </li>
+              <li><a href="#3">Contactenos</a></li>
+              <li><a href="#">Intranet</a></li>
+          </ul>
+    
+      </nav>
+      
+  
+      <!-- single page intro -->
+     <section style="background-image: url('https://west.net.co/wp-content/uploads/2024/02/west_foto_grupal1.jpg');
+    background-size: cover;
+    background-position: center;" class="single-page-intro apc-single-background" id="1">
+  
+          <div class="content">
+              <h1 data-section="nosotros_heading" data-value="heading_title">NOSOTROS</h1>
+              <p data-section="nosotros_heading" data-value="heading_description"> En WEST, contamos con un equipo experto que combina habilidades técnicas sólidas con excelentes
+                  habilidades interpersonales. Priorizamos tanto las habilidades técnicas como las blandas, fomentando un
+                  ambiente colaborativo donde la comunicación y la resolución de problemas son clave. Nuestro objetivo es
+                  ofrecer soluciones tecnológicas avanzadas mientras construimos relaciones duraderas basadas en confianza
+                  y éxito mutuo.
+                  <!-- En WEST, contamos con un equipo altamente capacitado que combina habilidades técnicas sólidas con una
+                  destacada aptitud interpersonal. Nuestros expertos en soluciones tecnológicas aportan años de
+                  experiencia y un compromiso constante con la innovación. Además de nuestras habilidades técnicas,
+                  priorizamos las habilidades blandas, promoviendo un ambiente de trabajo colaborativo donde la
+                  comunicación efectiva y la resolución de problemas son fundamentales. En WEST, no solo ofrecemos
+                  soluciones tecnológicas avanzadas, sino que también nos esforzamos por construir relaciones duraderas
+                  basadas en la confianza y el éxito compartido. ¡Descubra una experiencia donde la tecnología y la
+                  humanidad se unen para impulsar su éxito! -->
+              </p>
+          </div>
+      </section>
+  
+      
+      <section class="seccion politicas">
+          <div class="politicas-heading">
+              <h1 data-section="nosotros_polices" data-value="heading">POLÍTICAS</h1>
+          </div>
+          <div class="politicas-container">
+              <div class="politicas-content">
+                  <p data-section="nosotros_polices" data-value="text">
+                      En WEST nos esforzamos por operar bajo estándares excepcionales.
+                      Nuestras políticas reflejan nuestro compromiso con la ética,
+                      la responsabilidad social y un ambiente de trabajo positivo.
+                      Descubre nuestras políticas clave, desde Desconexión Laboral hasta
+                      Seguridad Vial. Estas directrices no solo definen nuestras operaciones,
+                      sino que también crean un entorno donde la integridad y la seguridad son
+                      prioridades.
+                  </p>
+              </div>
+              <div class="politicas-imgs">
+                  
+                  <div class="item">
+  
+                      <a href="/politica-ayd-test">
+                          <img src="https://west.net.co/wp-content/uploads/2021/02/PREVENCION.jpg" />
+                      </a>
+                      <h3 data-section="nosotros_polices" data-value="police1">Alcohol y drogas</h3>
+                  </div>
+                  <div class="item">
+  
+                      <a href="/politicas-sig-west">
+                          <img src="https://west.net.co/wp-content/uploads/2021/02/SIG-2.jpg" />
+                      </a>
+                      <h3 data-section="nosotros_polices" data-value="police2">SIG - WEST ENGINEERING</h3>
+                  </div>
+                  <div class="item">
+  
+                      <a href="/seguridad-vial">
+                          <img src="https://west.net.co/wp-content/uploads/2021/02/VIAL.jpg" />
+                      </a>
+                      <h3 data-section="nosotros_polices" data-value="police3">Seguridad Vial</h3>
+                  </div>
+              </div>
+              <br><br>
+              <div class="politicas-imgs">
+                  <div class="item">
+  
+                      <a href="/politica-dl-test">
+                          <img src="https://west.net.co/wp-content/uploads/2022/07/Circulo-Desconexion-laboral.png" />
+                      </a>
+                      <h3 data-section="nosotros_polices" data-value="police4">Desconexión Laboral</h3>
+                  </div>
+                  <div class="item">
+  
+                      <a href="/politica-rs-test">
+                          <img src="https://west.net.co/wp-content/uploads/2022/07/Circulo-Responsabilidad-social.png" />
+                      </a>
+                      <h3 data-section="nosotros_polices" data-value="police5">Responsabilidad Social</h3>
+                  </div>
+                  <div class="item">
+  
+                      <a href="/mision-vision">
+                          <img src="https://west.net.co/wp-content/uploads/2021/02/MISYVIS.jpg" />
+                      </a>
+                      <h3 data-section="nosotros_polices" data-value="police6">Misión y Visión</h3>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="seccion excelencia">
+          <div class="excelencia-heading">
+              <h1 data-section="nosotros_excellence" data-value="heading">EXCELENCIA</h1>
+          </div>
+          <div class="excelencia-container">
+              <div class="excelencia-content">
+                  <p data-section="nosotros_excellence" data-value="text">
+                      Nuestros principios y valores fundamentales han sido la base para desarrollar una cultura arraigada
+                      en la excelencia,
+                      especialmente en aspectos cruciales como calidad, seguridad, medio ambiente y responsabilidad
+                      social. Estos principios
+                      se sostienen y fortalecen mediante sistemas de gestión robustos que guían y respaldan nuestra
+                      dedicación a mantener estándares
+                      elevados en todas estas áreas.
+                  </p>
+              </div>
+              <div class="excelencia-slider">
+                  <div class="slide-track">
+                      <div class="slide"><img src="https://west.net.co/wp-content/uploads/2021/06/NORSOK.jpg" /></div>
+                      <div class="slide"><img src="https://west.net.co/wp-content/uploads/2021/06/ISO-45001.jpg" /></div>
+                      <div class="slide"><img src="https://west.net.co/wp-content/uploads/2021/06/ISO-14001.jpg" /></div>
+                      <div class="slide"><img src="https://west.net.co/wp-content/uploads/2021/06/ISO-9001.jpg" /></div>
+                      <div class="slide"><img
+                              src="https://west.net.co/wp-content/uploads/2021/06/CCS-e1622566726626.jpg" /></div>
+                      <div class="slide"><img src="https://west.net.co/wp-content/uploads/2021/06/RUC.jpg" /></div>
+                  </div>
+              </div>
+              <div class="excelencia-button"><a class="button"
+                      href="https://west.net.co/codigo-de-etica-y-buen-gobierno/" data-section="nosotros_excellence" data-value="button_text">codigo de etica y buen gobierno</a>
+              </div>
+          </div>
+  
+  
+  <section class="seccion equipo-certificaciones">
+      <div class="title-certificaciones">
+          <h1 data-section="nosotros_certificaciones" data-value="heading">EQUIPO DE INTEGRACIÓN Y CERTIFICACIONES</h1>
+      </div>
+      <div class="equipo-cards-certificaciones">
+          <div class="equipo">
+              <figure class="card-certificaciones">
+                  <div class="imagen-certificacion">
+                      <img src="https://west.net.co/wp-content/uploads/2024/01/cap.png" alt="">
+                  </div>
+                  <figcaption>
+                      <h5 data-section="nosotros_certificaciones" data-value="certification1">Certified Automation Professionals (CAP®)</h5>
+                  </figcaption>
+              </figure>
+              <figure class="card-certificaciones">
+                  <div class="imagen-certificacion">
+                      <img src="https://west.net.co/wp-content/uploads/2024/01/aspen.png" alt="">
+                  </div>
+                  <figcaption>
+                      <h5 data-section="nosotros_certificaciones" data-value="certification2">Certified Expert Users in ASPEN HYSYS / ASPEN PIMS / AVEVA</h5>
+                  </figcaption>
+              </figure>
+              <figure class="card-certificaciones">
+                  <div class="imagen-certificacion">
+                      <img src="https://west.net.co/wp-content/uploads/2024/01/sercurity.jpeg" alt="">
+                  </div>
+                  <figcaption>
+                      <h5 data-section="nosotros_certificaciones" data-value="certification3">CERTIFIED FUNCTIONAL SAFETY ENGINEERS</h5>
+                  </figcaption>
+              </figure>
+          </div>
+          <div class="equipo">
+              <figure class="card-certificaciones">
+                  <div class="imagen-certificacion">
+                      <img src="https://west.net.co/wp-content/uploads/2024/01/cap.png" alt="">
+                  </div>
+                  <figcaption>
+                      <h5 data-section="nosotros_certificaciones" data-value="certification4">ADVANCED PROCESS CTRL SPECIALISTS</h5>
+                  </figcaption>
+              </figure>
+              <figure class="card-certificaciones">
+                  <div class="imagen-certificacion">
+                      <img src="https://west.net.co/wp-content/uploads/2024/01/PMP-e1519670762615.webp" alt="">
+                  </div>
+                  <figcaption>
+                      <h5 data-section="nosotros_certificaciones" data-value="certification5">SCRUM PROFESSIONALS</h5>
+                  </figcaption>
+              </figure>
+              <figure class="card-certificaciones">
+                  <div class="imagen-certificacion">
+                      <img src="https://west.net.co/wp-content/uploads/2024/01/python.png" alt="">
+                  </div>
+                  <figcaption>
+                      <h5 data-section="nosotros_certificaciones" data-value="certification6">DATA SCIENTISTS / DATA ANALYSTS</h5>
+                  </figcaption>
+              </figure>
+          </div>
+          <div class="equipo">
+              <figure class="card-certificaciones">
+                  <div class="imagen-certificacion">
+                      <img src="https://west.net.co/wp-content/uploads/2024/01/NT1.png" alt="">
+                  </div>
+                  <figcaption>
+                      <h5 data-section="nosotros_certificaciones" data-value="certification7">CYBERSECURITY EXPERT - CERTIFIED (ISA)</h5>
+                  </figcaption>
+              </figure>
+              <figure class="card-certificaciones">
+                  <div class="imagen-certificacion">
+                      <img src="https://west.net.co/wp-content/uploads/2024/01/NT4.png" alt="">
+                  </div>
+                  <figcaption>
+                      <h5 data-section="nosotros_certificaciones" data-value="certification8">PROFESSIONAL CERTIFIED - CERTIFIED OLARWINDS</h5>
+                  </figcaption>
+              </figure>
+              <figure class="card-certificaciones">
+                  <div class="imagen-certificacion">
+                      <img src="https://west.net.co/wp-content/uploads/2024/01/NT3.png" alt="">
+                  </div>
+                  <figcaption>
+                      <h5 data-section="nosotros_certificaciones" data-value="certification9">SUD - CERTIFIED TUV</h5>
+                  </figcaption>
+              </figure>
+          </div>
+          <div class="equipo">
+              <figure style="width:auto;" class="card-certificaciones">
+                  <div class="imagen-certificacion">
+                      <img src="https://west.net.co/wp-content/uploads/2024/01/NT2.png" alt="">
+                  </div>
+                  <figcaption>
+                      <h5 data-section="nosotros_certificaciones" data-value="certification10">CEH - CERTIFIED ETHICAL HACKER</h5>
+                  </figcaption>
+              </figure>
+          </div>
+      </div>
+  </section>   
+  
+      <section class="seccion equipo-trabajo">
+          <div>
+              <h1 data-section="nuestro_equipo" data-value="heading">NUESTRO EQUIPO DE TRABAJO</h1>
+          </div>
+          <div class="equipo-cards">
+              <div class="equipo">
+                  <figure class="card">
+                      <div class="profile-image">
+                          <img src="https://west.net.co/wp-content/uploads/2024/01/JoanRuiz.jpeg" alt="">
+                      </div>
+                      <figcaption>
+                          <h3>Joan Ruiz</h3>
+                          <h5 data-section="nuestro_equipo" data-value="cargo1">CEO</h5>
+                          <p></p>
+                          <div class="icons">
+                              <a href="https://www.linkedin.com/in/joan-ruiz-aa990b140/" class="fa fa-linkedin"></a>
+                          </div>
+                      </figcaption>
+                  </figure>
+              </div>
+              <div class="equipo">
+                  <figure class="card">
+                      <div class="profile-image">
+                          <img src="https://west.net.co/wp-content/uploads/2024/01/AndresValencia.jpeg" alt="">
+                      </div>
+                      <figcaption>
+                          <h3>Andrés Valencia</h3>
+                          <h5 data-section="nuestro_equipo" data-value="cargo2">ENGINEERING AND OPERATIONS MANAGER</h5>
+                          <p></p>
+                          <div class="icons">
+                              <a href="https://www.linkedin.com/in/andres-f-valencia-pe-cap-ccpsc-275b3a3a/"
+                                  class="fa fa-linkedin"></a>
+                          </div>
+                      </figcaption>
+                  </figure>
+                  <figure class="card">
+                      <div class="profile-image">
+                          <img src="https://west.net.co/wp-content/uploads/2024/01/MarioLadino.jpeg" alt="">
+                      </div>
+                      <figcaption>
+                          <h3>Mario Ladino</h3>
+                          <h5 data-section="nuestro_equipo" data-value="cargo3">GENERAL MANAGER</h5>
+                          <p></p>
+                          <div class="icons">
+                              <a href="https://www.linkedin.com/in/mario-ladino-88a57557/" class="fa fa-linkedin"></a>
+                          </div>
+                      </figcaption>
+                  </figure>
+          </div>
+      </section>
+  </body>
+  <!-- sección footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+          <div class="footer-col">
+            <h4 data-section="footer" data-value="company">company</h4>
+            <ul>
+              <li><a href="#" data-section="footer" data-value="company1">about us</a></li>
+              <li><a href="#" data-section="footer" data-value="company2">our services</a></li>
+              <li><a href="#" data-section="footer" data-value="company3">privacy policy</a></li>
+              <li><a href="#" data-section="footer" data-value="company4">affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 data-section="footer" data-value="get_help">get help</h4>
+            <ul>
+              <li><a href="#" data-section="footer" data-value="get_help1">FAQ</a></li>
+              <li><a href="#" data-section="footer" data-value="get_help2">ChatBot</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+              <h4 data-section="footer" data-value="contact_info">Contact Info</h4>
+                <ul>
+                Worldwide Engineering Solutions Team WEST SAS
+                <li>Bogotá: +57 (1) 300 3989    Carrera 7 N° 127 - 48, Oficina 405 </li>
+                <li>Houston:  +1 (832) 460 1042 443 North loop W. 77008</li>
+                </ul> 
+          </div>
+      </div>
+    </div>
+  </footer>    
+
+    

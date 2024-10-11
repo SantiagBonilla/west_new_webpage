@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West Engineering</title>
+    <script src="chatbot.js" defer></script>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./Lannding.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    
+  </head>
+<body>
+    <!-- boton de chatbot -->
+    <button class="chatbot-toggler">
+      <span class="material-symbols-rounded">mode_comment</span>
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <!-- sección chatbot -->
+    <div class="chatbot">
+      <header>
+        <h2>WESTbot</h2>
+        <span class="close-btn material-symbols-outlined">close</span>
+      </header>
+      <ul class="chatbox">
+        <li class="chat incoming">
+            <span><img src="images\westbot.jpeg"></span>
+            <p>Hola! soy WESTbot <br>¿Cómo puedo ayudarte hoy, quieres conocer sobre algún tema particualr? 
+                <br>1. servicios<br>2. contacto </p>
+        </li>
+      </ul>
+      <div class="chat-input">
+        <textarea placeholder="Introduzca la opción" spellcheck="false" required></textarea>
+        <span id="send-btn" class="material-symbols-rounded">send</span>
+      </div>
+    </div>
+    <div id="cont">
+      <div class="menu-fixed" id="menu-fixed">
+          <a href="#cont">
+            <i class="material-icons back">
+              <span class="material-symbols-outlined">
+                arrow_back_ios
+                </span>
+            </i>
+          </a>
+          <a href="#menu-fixed">
+            <div class="logo">
+              <span></span>   
+            </div>
+            <p class="pmenu">MENU</p>
+          </a>
+          <hr>
+          <ul class="menu">
+<a href="/test">            
+<li>
+              <span class="material-symbols-outlined" style="color: white;">home</span>
+            <p>Home</p>
+            </li>
+</a>
+<a href="/nosotrostest">
+            <li>
+           <span class="material-symbols-outlined" style="color: white;">groups</span>
+              <p>Nosotros</p>
+            </li>
+</a>
+<a href="/test#Servicios">
+            <li>
+              <span class="material-symbols-outlined" style="color: white;">design_services</span>
+              <p>Servicios</p>
+            </li>
+</a>
+<a href="/contactotest">
+            <li>
+              <span class="material-symbols-outlined" style="color: white;">contact_phone</span>
+              <p>Contacténos</p>
+            </li>
+</a>
+<a href="/gestion-hseq">
+            <li>
+              <span class="material-symbols-outlined" style="color: white;">file_present</span>
+              <p>Gestión HSEQ</p>
+            </li>
+</a>
+<a href="/gestion-administrativa">
+            <li>
+              <span class="material-symbols-outlined" style="color: white;">pending_actions</span>
+              <p>Gestión Administrativa</p>
+            </li>
+</a>
+<a href="/intranet">
+            <li>
+              <span class="material-symbols-outlined" style="color: white;">help_center</span>
+              <p>Mesa de ayuda</p>
+            </li>
+</a>
+<a href="/intranet-2">
+            <li>
+              <span class="material-symbols-outlined" style="color: white;">history_edu</span>
+              <p>Autogestión</p>
+            </li>
+</a>
+          </ul>
+          <ul>
+            <li><div class="flags" id="flags">
+              <div class="flags__item" data-language="es">
+                <img src="https://west.net.co/wp-content/uploads/2024/01/colombia.svg" alt="">
+              </div>
+              <div class="flags__item" data-language="en">
+                <img src="https://west.net.co/wp-content/uploads/2024/01/unitedStates.svg" alt="">
+              </div>
+            </div></li>
+          </ul>
+          <ul>
+            <li class="material-icons info">
+            <a href="../wp-login.php?action=logout"><span class="material-symbols-outlined" style="color: white; cursor: pointer;">logout</span></a> 
+          </li>
+          </ul>
+          
+      </div>
+    </div>  
+    <!-- top menú -->
+    <nav class="navbar" id="navbar">
+      <div class="logo"><a href="#"><img src="./Grupo-5.svg" width="150px"></a></div>
+      <ul class="nav-links">
+          <li><a href="#">Nosotros</a></li>
+          <li>
+              <a href="Lannding.html#Servicios">Servicios</a>
+              <ul class="dropdown">
+                <li><a href="APCBuena.html">APC</a></li>
+                <li><a href="Sostenibilidad.html">Sostenibilidad</a></li>
+                <li><a href="AutomatizacionBuena.html">Automatizacion</a></li>
+                <li><a href="SeguridadFuncionaBuena.html">Seguridad Funcional</a></li>
+                <li><a href="Digitalización.html">Digitalizacion</a></li>
+                <li><a href="ciberseguridad.html">Ciberseguridad</a></li>
+                <li><a href="lufkin.html">Lufkin</a></li>
+              </ul>
+            </li>
+          <li><a href="#3">Contactenos</a></li>
+          <li><a href="#">Intranet</a></li>
+      </ul>
+
+  </nav>
+
+    <!-- sección home -->
+    <nav class="fixed-container" id="1">
+      <video autoplay muted loop id="myVideo">
+        <source src="https://west.net.co/wp-content/uploads/2024/01/VID1.mp4">
+      </video>
+      <div class="content">
+        <img src="https://west.net.co/wp-content/uploads/2020/11/Grupo-5.svg" style="margin: 10px;">
+        <h1 class="title" data-section="landing" data-value="landing_tittle">INNOVANDO HOY PARA UN MAÑANA SOSTENIBLE</h1>
+      </div>
+    </nav>
+
+    <section class="seccion hero" style="background-image: none;">
+      <div class="nostros-container" >
+        <div class="hero-content" style="color: black">
+          <h1 data-section="why_west" data-value="heading"  style="color: black">¿Por qué west?</h1>
+            <p data-section="why_west" data-value="content">Nos destacamos en la vanguardia de la innovación en  automatización y digitalización industrial. Nuestro compromiso va más allá de ofrecer soluciones de vanguardia; valoramos profundamente la relación con nuestros clientes. Cada proyecto se percibe como una colaboración estratégica, donde trabajamos estrechamente para comprender sus metas y desafíos específicos.
+              Esta conexión nos permite personalizar soluciones que se adaptan perfectamente a sus necesidades, asegurando un impacto positivo y dura y duradero en su operación. Nuestra atención centrada en el cliente no termina con la implementación; estamos comprometidos a mantener una comunicación abierta y continua para garantizar que sus expectativas se superen en cada etapa del camino. Podemos ser un aliado estratégico en su camino hacia un futuro más inteligente, limpio y sostenible.</p>
+            </p>
+        </div>
+          <div class="hero-img">
+              <img src="https://west.net.co/wp-content/uploads/2024/01/control2.png">
+          </div>
+          
+      </div>
+    </section>
+
+    <!--Sección Industrias-->
+    <div class="Industrias">
+      <div class="titulo-industrias"><h1><b>INDUSTRIAS</b></h1></div>
+      
+<div class="fila-industrias">
+<div class="industria-item">
+          <img src="https://west.net.co/wp-content/uploads/2024/01/industria1.jpeg">
+          <h2>Oil and gas</h2>        </div>
+        <div class="industria-item">
+          <img src="https://west.net.co/wp-content/uploads/2024/01/industria2.jpeg">
+          <h2>Food & Beverage</h2>   
+        </div>
+        <div class="industria-item">
+          <img src="https://west.net.co/wp-content/uploads/2024/01/industria3.jpeg">
+          <h2>Power Generation</h2>   
+        </div>
+</div>
+<div class="fila-industrias">
+        
+        <div class="industria-item">
+          <img src="https://west.net.co/wp-content/uploads/2024/01/industria4.jpeg">
+          <h2>Metals & Mining</h2>   
+        </div>
+        <div class="industria-item">
+          <img src="https://west.net.co/wp-content/uploads/2024/01/industria5.jpeg">
+          <h2>Engineering Services & Construction</h2>   
+        </div>
+        <div class="industria-item">
+          <img src="https://west.net.co/wp-content/uploads/2024/01/industria6.jpg">
+          <h2>Water & Waste</h2>   
+        </div>
+      </div>
+    </div>
+      <!-- sección servicios -->
+      <div id="Servicios">
+          <h1 data-section="services" data-value="heading">SERVICIOS</h1>
+            <div class = "fila-servicios" >
+              <div class = "card-home">
+                <img src="https://west.net.co/wp-content/uploads/2024/01/control1.jpeg" alt="">
+                <div class="card-content">
+                  <h2 data-section="services" data-value="heading-control"> control Avanzado </h2>
+                  <p data-section="services" data-value="content-control">
+                  La tecnología de control avanzado impulsa operaciones hacia la excelencia. Estrategias multi variables evaluadas con herramientas de simulación de proceso garantizan rendimiento óptimo y consistencia en entornos dinámicos, respondiendo proactivamente a perturbaciones.
+                  </p>     
+                  <a href="./APC.html" class="button">
+                    Find out more 
+                    <span class="material-symbols-outlined">
+                      arrow_right_alt
+                    </span>
+                  </a>                
+                </div>
+              </div>
+              <div class = "card-home">
+                  <img src="https://west.net.co/wp-content/uploads/2024/01/AD.jpeg" alt="">
+                <div class="card-content">
+                  <h2 data-section="services" data-value="heading-analytics">
+                    ANALÍTICA DE DATOS
+                  </h2>
+                  <p data-section="services" data-value="content-analytics">
+                    A partir del gran volumen de datos que día a día son generados de manera automática en 
+                sistemas de control, junto con el conocimiento claro del proceso, es posible analizar, 
+                monitorear y predecir el desempeño operacional que permita responder a los desafíos de
+                  mejoramiento continuo
+                  </p>     
+                  <a href="#" class="button">
+                    Find out more 
+                    <span class="material-symbols-outlined">
+                      arrow_right_alt
+                    </span>
+                  </a>                
+                </div>
+                </div>
+                <div class = "card-home">
+                  <img src="https://west.net.co/wp-content/uploads/2024/01/automatizacion2.jpeg" alt="">
+                  <div class="card-content">
+                    <h2 data-section="services" data-value="heading-automation">
+                      AUTOMATIZACIÓN Y CONTROL
+                    </h2>
+                    <p data-section="services" data-value="content-automation">
+                      La automatización industrial mejora la eficiencia y reduce costos al realizar tareas repetitivas, liberando a los trabajadores para actividades estratégicas. Eleva la calidad y consistencia en la producción. La flexibilidad de estos procesos permite a las empresas adaptarse rápidamente, brindando ventajas competitivas. Además, la automatización abraza la sostenibilidad al reducir la huella ecológica y promover prácticas responsables en el sector industrial.
+                    </p>     
+                    <a href="./automatizacion.html" class="button">
+                      Find out more 
+                      <span class="material-symbols-outlined">
+                        arrow_right_alt
+                      </span>
+                    </a>                
+                  </div>
+                </div>
+                <div class = "card-home">
+                  <img src="https://west.net.co/wp-content/uploads/2024/01/SeguridadP.jpeg" alt="">
+                  <div class="card-content">
+                    <h2 data-section="services" data-value="heading-safety">
+                      SEGURIDAD FUNCIONAL
+                    </h2>
+                    <p data-section="services" data-value="content-safety">
+                      En West Engineering, nos especializamos en servicios de ingeniería diseñados para salvaguardar a su empresa contra las posibles amenazas que pueden liberar ciertos peligros capaces de dañar significativamente a nuestro personal, nuestro medio ambiente y el propio negocio
+                    </p>     
+                    <a href="./SeguridadFuncional.html">
+                      Find out more 
+                      <span class="material-symbols-outlined">
+                        arrow_right_alt
+                      </span>
+                    </a>                
+                  </div>
+                </div>
+                <div class = "card-home">
+                    <img src="https://west.net.co/wp-content/uploads/2024/01/realidadaumentada1.jpeg" alt="">
+                  <div class="card-content">
+                    <h2 data-section="services" data-value="heading-reality">
+                      DIGITALIZACIÓN DE PROCESOS
+                    </h2>
+                    <p data-section="services" data-value="content-reality">
+                      La realidad aumentada (RA) redefine la interacción entre el mundo real y la información digital.
+                      Al fusionar elementos virtuales con el entorno físico, la RA ofrece experiencias inmersivas en diversos 
+                      campos como la medicina, la educación y la industria. Esta tecnología innovadora tiene un impacto significativo, 
+                      presentando un potencial revolucionario.
+                    </p>     
+                    <a href="#" class="button">
+                      Find out more 
+                      <span class="material-symbols-outlined">
+                        arrow_right_alt
+                      </span>
+                    </a>                
+                  </div>
+                  </div>
+                  <div class = "card-home">
+                    <img src="https://west.net.co/wp-content/uploads/2024/01/ciberseguridad.jpeg" alt="">
+                    <div class="card-content">
+                      <h2 data-section="services" data-value="heading-cybersecurity">
+                        CIBERSEGURIDAD
+                      </h2>
+                      <p data-section="services" data-value="content-cybersecurity">
+                        En una era de conectividad y digitalización, los servicios industriales esenciales para el desarrollo de
+                        la humanidad se encuentran cada vez más expuestos a ciber-amenazas que pueden afectar la
+                        cotidianidad de nuestras vidas o en el peor de los casos la propia vida de las personas. En WEST
+                        ofrecemos las herramientas necesarias para proteger la infraestructura crítica de los ambientes
+                        industriales, ante un ciberataque.
+                      </p>     
+                      <a href="./ciberseguridad.html" class="button">
+                        Find out more 
+                        <span class="material-symbols-outlined">
+                          arrow_right_alt
+                        </span>
+                      </a>                
+                    </div>
+                  </div>
+                  <div class = "card-home">
+                    <img src="https://west.net.co/wp-content/uploads/2024/01/lufkin2.jpeg" alt="">
+                    <div class="card-content">
+                      <h2 data-section="services" data-value="heading-lufkin">
+                        LUFKIN
+                      </h2>
+                      <p data-section="services" data-value="content-lufkin">
+                        Lufkin destaca en soluciones industriales de control y seguridad, alineándose con estándares como IEC 62443. 
+                      Su enfoque innovador garantiza la excelencia y protección en sistemas contra amenazas cibernéticas.
+                      </p>     
+                      <a href="./lufkin.html" class="button">
+                        Find out more 
+                        <span class="material-symbols-outlined">
+                          arrow_right_alt
+                        </span>
+                      </a>                
+                    </div>
+                  </div>         
+              </div>   
+      </div>
+      <!-- sección noticias -->
+      <div class="noticias"  > 
+
+  <div class="title-cards-news">
+    <h1>NOTICIAS</h1>
+  </div>
+  <div class="container-card-news">
+
+<div class="card-news">
+  <figure>
+    <img src="https://west.net.co/wp-content/uploads/2024/01/FT_Americas.jpg" alt="imagen 1" loading="lazy">
+  </figure>
+  <div class="contenido-card-news">
+    <h3>WEST Engineering ha ocupado el puesto No. 91 a nivel regional y No. 2 en Colombia</h3>
+    <p>Podemos crear la identidad corporativa de tu empresa. Diseño , Maquetación de folletos, Catálogos, Papelería y mucho más.</p>
+    <a href="#">Leer Màs</a>
+  </div>
+  </div>
+  <div class="card-news">
+  <figure>
+    <img src="https://west.net.co/wp-content/uploads/2018/12/portada4.jpg">
+  </figure>
+  <div class="contenido-card-news">
+    <h3>West Engineering fortalece su presencia en el sector de Oil & Gas con una asociación estratégica con Líder en sistemas de bombeo</h3>
+    <p>Nosotros creamos y optimizamos tus perfiles en las Redes Sociales. Importantes para que tu presencia online sea completa.</p>
+    <a href="#">Leer Màs</a>
+  </div>
+  </div>
+  <div class="card-news">
+  <figure>
+    <img src="https://west.net.co/wp-content/uploads/2023/12/img3.png">
+  </figure>
+    <div class="contenido-card-news">
+      <h3>West Engineering establece una oficina de innovación y desarrollo para abordar temas de Vanguardia</h3>
+      <p>Creamos tu página web utilizando las últimas tecnologías disponibles. Una Web adaptativa a tu móvil o Tablet y con un gestor de contenido fácil.</p>
+      <a href="#">Leer Màs</a>
+    </div>
+  </div>
+</div>
+    
+    </div>
+    </div>
+    <!-- sección contacto por sede -->
+    <div class="Contact">
+      <h1>SEDES</h1>
+      <div class="Contact-Fila">
+        <div class="Contact-Col">
+          <div class="Contact-card">
+            <img src="https://west.net.co/wp-content/uploads/2024/01/bogota.jpg">
+            <h2>Bogotá</h2>
+              <p>
+                BOGOTA - COLOMBIA <br>
+              Carrera 7 # 127 – 48. Of 403 - Teléfono +57(1)-3003989
+              </p>
+            <a> Contact <span class="material-symbols-outlined">
+              arrow_right_alt
+            </span></a>
+          </div>
+        </div>
+        <div class="Contact-Col">
+          <div class="Contact-card">
+            <img src="https://west.net.co/wp-content/uploads/2024/01/houston.jpg">
+            <h2>Houston</h2>    
+            <p>HOUSTON, TX. <br>
+              403 NorthLoop W. Houston - Main: +1 (346) 326 0068</p>
+            <a>Contact <span class="material-symbols-outlined">
+              arrow_right_alt
+            </span></a>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- sección partners -->
+    <div class="slider">
+        <h1 data-section="partners" data-value="heading"> PARTNERS </h2>
+        <div class="slide-track">
+            <div class="slide"> <img src="https://west.net.co/wp-content/uploads/2023/02/AspenTech-Logo.jpg"> </div>
+            <div class="slide"> <img src="https://west.net.co/wp-content/uploads/2018/12/chivor.png"> </div>
+            <div class="slide"> <img src="https://west.net.co/wp-content/uploads/2018/12/ecopetrol.png"></div>
+            <div class="slide"> <img src="https://west.net.co/wp-content/uploads/2018/12/emgesa.png"></div>
+            <div class="slide"> <img src="https://west.net.co/wp-content/uploads/2020/12/enel-logo.png.resize.768.560.center.center@2x.png"></div>
+            <div class="slide"> <img src="https://west.net.co/wp-content/uploads/2018/12/epm.png"></div>
+            <div class="slide"> <img src="https://west.net.co/wp-content/uploads/2020/12/isagen.png"></div>
+            <div class="slide"> <img src="https://west.net.co/wp-content/uploads/2018/12/kimberly.png"></div>
+            <div class="slide"> <img src="https://west.net.co/wp-content/uploads/2023/02/Lufkin_Industries_logo.svg.png"></div>
+            <div class="slide"> <img src="https://west.net.co/wp-content/uploads/2018/12/oxy.png"></div>
+            <div class="slide"> <img src="https://west.net.co/wp-content/uploads/2023/02/Siemens-Logo.png"></div>
+            <div class="slide"> <img src="https://west.net.co/wp-content/uploads/2021/02/enel-logo.png.resize.768.560.center.center@2x.png"></div>
+            <div class="slide"> <img src="https://west.net.co/wp-content/uploads/2023/02/logo-Wiseplant.png"></div>
+        </div>
+            
+    </div>
+     
+           
+    </div>     
+
+
+
+    <!-- sección footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+            <div class="footer-col">
+              <h4 data-section="footer" data-value="company">company</h4>
+              <ul>
+                <li><a href="#" data-section="footer" data-value="company1">about us</a></li>
+                <li><a href="#" data-section="footer" data-value="company2">our services</a></li>
+                <li><a href="#" data-section="footer" data-value="company3">privacy policy</a></li>
+                <li><a href="#" data-section="footer" data-value="company4">affiliate program</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4 data-section="footer" data-value="get_help">get help</h4>
+              <ul>
+                <li><a href="#" data-section="footer" data-value="get_help1">FAQ</a></li>
+                <li><a href="#" data-section="footer" data-value="get_help2">ChatBot</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-section="footer" data-value="contact_info">Contact Info</h4>
+                  <ul>
+                  Worldwide Engineering Solutions Team WEST SAS
+                  <li>Bogotá: +57 (1) 300 3989    Carrera 7 N° 127 - 48, Oficina 405 </li>
+                  <li>Houston:  +1 (832) 460 1042 443 North loop W. 77008</li>
+                  </ul> 
+            </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./Lannding.js"></script>
+</body>
+</html>
+
+
